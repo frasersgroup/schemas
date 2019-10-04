@@ -1,0 +1,8 @@
+{
+  "name": "schemas",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/Combine-Labs/schemas",
+  "author": "Chris Birk <cmbirk@gmail.com>",
+  "license": "MIT"
+}
