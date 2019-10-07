@@ -1,0 +1,5 @@
+{
+  "$id": "createdAt#",
+  "description": "Timestamp set on model creation",
+  "type": "date-time"
+}

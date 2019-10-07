@@ -1,0 +1,5 @@
+{
+  "$id": "updatedAt#",
+  "description": "Timestamp for last model update",
+  "type": "date-time"
+}

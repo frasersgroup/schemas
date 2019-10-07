@@ -1,0 +1,22 @@
+{
+  "$id": "product#",
+  "title": "Product",
+  "type": "object",
+  "required": [],
+  "properties": {
+    "createdAt": {
+      "$ref": "fields/createdAt.json"
+    },
+    "description": {
+      "type": "string",
+      "description": "Product Description"
+    },
+    "title": {
+      "type": "string",
+      "description": "Product Title"
+    },
+    "updatedAt": {
+      "$ref": "fields/updatedAt.json"
+    }
+  }
+}
