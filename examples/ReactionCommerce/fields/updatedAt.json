@@ -1,0 +1,7 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "updatedAt#",
+  "description": "Timestamp for last model update",
+  "type": "string",
+  "format": "date-time"
+}

@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "variantMedia#",
+  "title": "VariantMedia",
+  "type": "object",
+  "required": [
+    "createdAt"
+  ],
+  "properties": {
+    "createdAt": {
+      "$ref": "createdAt"
+    },
+    "mediaId": {
+      "type": "string",
+      "description": ""
+    },
+    "priority": {
+      "type": "integer"
+    },
+    "metafields": {
+      "type": "array",
+      "items": {
+        "$ref": "metaField"
+      }
+    },
+    "updatedAt": {
+      "$ref": "updatedAt"
+    }
+  }
+}

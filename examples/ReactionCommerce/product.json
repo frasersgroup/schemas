@@ -1,0 +1,9 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "product#",
+  "title": "Product",
+  "type": "object",
+  "properties": {
+
+  }
+}
