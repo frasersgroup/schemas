@@ -1,15 +1,35 @@
 {
-  "name": "schemas",
-  "version": "0.0.1",
+  "name": "@sportsdirect/schemas",
+  "version": "0.0.0",
+  "description": "",
   "main": "index.js",
-  "repository": "https://github.com/Combine-Labs/schemas",
+  "scripts": {
+    "compile": "ajv compile -s \"schemas/**/*.json\"",
+    "compile:examples": "ajv compile -s \"examples/**/*.json\"",
+    "lint": "eslint . --fix --ext .js,.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
   "author": "Chris Birk <cmbirk@gmail.com>",
   "license": "MIT",
-  "devDependencies": {
-    "ajv-cli": "^3.0.0",
-    "graphql-2-json-schema": "^0.1.1"
+  "engines": {
+    "node": ">=12.4",
+    "npm": "6.x"
   },
   "dependencies": {
     "ajv": "^6.10.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "ajv-cli": "^3.0.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.5.1",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-json": "^1.4.0",
+    "graphql-2-json-schema": "^0.1.1"
   }
 }
