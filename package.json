@@ -4,5 +4,12 @@
   "main": "index.js",
   "repository": "https://github.com/Combine-Labs/schemas",
   "author": "Chris Birk <cmbirk@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "ajv-cli": "^3.0.0",
+    "graphql-2-json-schema": "^0.1.1"
+  },
+  "dependencies": {
+    "ajv": "^6.10.2"
+  }
 }
