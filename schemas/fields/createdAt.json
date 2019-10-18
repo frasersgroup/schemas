@@ -1,5 +1,7 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "createdAt#",
   "description": "Timestamp set on model creation",
-  "type": "date-time"
+  "type": "string",
+  "format": "date-time"
 }

@@ -1,11 +1,12 @@
 {
+  "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "product#",
   "title": "Product",
   "type": "object",
   "required": [],
   "properties": {
     "createdAt": {
-      "$ref": "fields/createdAt.json"
+      "$ref": "createdAt"
     },
     "description": {
       "type": "string",
@@ -16,7 +17,7 @@
       "description": "Product Title"
     },
     "updatedAt": {
-      "$ref": "fields/updatedAt.json"
+      "$ref": "updatedAt"
     }
   }
 }
