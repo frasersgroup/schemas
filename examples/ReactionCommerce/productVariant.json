@@ -3,7 +3,118 @@
   "$id": "productVariant#",
   "title": "Product Variant",
   "type": "object",
+  "required": [
+    "_id",
+    "ancestors",
+    "isDeleted",
+    "isVisible",
+    "shopId",
+    "type"
+  ],
   "properties": {
-
+    "_id": {
+      "type": "string",
+      "title": "Variant ID"
+    },
+    "ancestors": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "string"
+      }
+    },
+    "attributeLabel": {
+      "type": "string"
+    },
+    "barcode": {
+      "type": "string",
+      "title": "Barcode"
+    },
+    "createdAt": {
+      "$ref": "createdAt"
+    },
+    "eventLog": {
+      "type": "array",
+      "title": "Variant Event Log",
+      "items": {
+        "$ref": "Event"
+      }
+    },
+    "height": {
+      "type": "number",
+      "title": "Height",
+      "minimum": 0,
+      "default": 0
+    },
+    "index": {
+      "type": "integer",
+      "description": "Variant position number in list"
+    },
+    "isDeleted": {
+      "type": "boolean",
+      "default": false
+    },
+    "isVisible": {
+      "type": "boolean",
+      "default": false
+    },
+    "length": {
+      "type": "number",
+      "title": "Length",
+      "minimum": 0,
+      "default": 0
+    },
+    "metafields": {
+      "type": "array",
+      "items": {
+        "$ref": "metaField"
+      }
+    },
+    "minOrderQuantity": {
+      "type": "integer",
+      "title": "Minimum order quantity"
+    },
+    "optionTitle": {
+      "type": "string",
+      "title": "Option"
+    },
+    "originCountry": {
+      "type": "string"
+    },
+    "shopId": {
+      "type": "string",
+      "title": "Variant ShopId"
+    },
+    "sku": {
+      "type": "string",
+      "title": "SKU"
+    },
+    "title": {
+      "type": "string",
+      "title": "Label"
+    },
+    "type": {
+      "type": "string",
+      "title": "Type",
+      "default": "variant"
+    },
+    "updatedAt": {
+      "$ref": "updatedAt"
+    },
+    "weight": {
+      "type": "number",
+      "title": "Weight",
+      "minimum": 0,
+      "default": 0
+    },
+    "width": {
+      "type": "number",
+      "title": "Width",
+      "minimum": 0,
+      "default": 0
+    },
+    "workflow": {
+      "$ref": "Workflow"
+    }
   }
 }

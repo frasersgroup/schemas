@@ -3,7 +3,139 @@
   "$id": "product#",
   "title": "Product",
   "type": "object",
+  "required": [
+    "_id",
+    "ancestors",
+    "createdAt",
+    "handle",
+    "isDeleted",
+    "isVisible",
+    "shopId",
+    "supportedFulfillmentTypes",
+    "title",
+    "type"
+  ],
   "properties": {
-
+    "_id": {
+      "type": "string",
+      "title": "Product ID"
+    },
+    "ancestors": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "string"
+      }
+    },
+    "createdAt": {
+      "$ref": "createdAt"
+    },
+    "currentProductHash": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "facebookMsg": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "googleplusMsg": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "handle": {
+      "type": "string",
+      "default": "",
+      "title": "Permalink"
+    },
+    "hashtags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "isDeleted": {
+      "type": "boolean",
+      "default": false
+    },
+    "isVisible": {
+      "type": "boolean",
+      "default": false
+    },
+    "metaDescription": {
+      "type": "string"
+    },
+    "metafields": {
+      "type": "array",
+      "items": {
+        "$ref": "metaField"
+      }
+    },
+    "originCountry": {
+      "type": "string"
+    },
+    "pageTitle": {
+      "type": "string"
+    },
+    "parcel": {
+      "$ref": "shippingParcel"
+    },
+    "pinterestMsg": {
+      "type": "string",
+      "maxLength": 255
+    },
+    "productType": {
+      "type": "string"
+    },
+    "publishedAt": {
+      "type": "date",
+      "format": "date-time"
+    },
+    "publishedProductHash": {
+      "type": "string"
+    },
+    "shopId": {
+      "type": "string",
+      "title": "Product ShopId"
+    },
+    "shouldAppearInSitemap": {
+      "type": "boolean",
+      "default": true
+    },
+    "supportedFulfillmentTypes": {
+      "type": "array",
+      "default": ["shipping"],
+      "title": "Supported fulfillment types",
+      "items": {
+        "type": "string"
+      }
+    },
+    "template": {
+      "type": "string",
+      "title": "Template"
+    },
+    "title": {
+      "type": "string",
+      "title": "Product Title"
+    },
+    "twitterMsg": {
+      "type": "string",
+      "maxLength": 140
+    },
+    "type": {
+      "type": "string",
+      "default": "simple",
+      "title": "Type"
+    },
+    "updatedAt": {
+      "$ref": "updatedAt"
+    },
+    "vendor": {
+      "type": "string"
+    },
+    "workflow": {
+      "$ref": "workflow"
+    }
   }
 }
