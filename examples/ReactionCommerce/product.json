@@ -89,7 +89,7 @@
       "type": "string"
     },
     "publishedAt": {
-      "type": "date",
+      "type": "string",
       "format": "date-time"
     },
     "publishedProductHash": {

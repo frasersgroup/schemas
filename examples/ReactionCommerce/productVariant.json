@@ -37,7 +37,7 @@
       "type": "array",
       "title": "Variant Event Log",
       "items": {
-        "$ref": "Event"
+        "$ref": "event"
       }
     },
     "height": {
@@ -114,7 +114,7 @@
       "default": 0
     },
     "workflow": {
-      "$ref": "Workflow"
+      "$ref": "workflow"
     }
   }
 }

@@ -1,0 +1,36 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "event#",
+  "description": "Event for EventLog",
+  "type": "object",
+  "required": [
+    "title",
+    "type",
+    "createdAt"
+  ],
+  "properties": {
+    "title": {
+      "type": "string",
+      "title": "Event Title"
+    },
+    "type": {
+      "type": "string",
+      "title": "Event Type"
+    },
+    "description": {
+      "type": "string",
+      "title": "Event Description"
+    },
+    "userId": {
+      "type": "string",
+      "title": "User who triggered event"
+    },
+    "trigger": {
+      "type": "string",
+      "title": "What triggered the event"
+    },
+    "createdAt": {
+      "$ref": "createdAt"
+    }
+  }
+}
