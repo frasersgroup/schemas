@@ -6,31 +6,31 @@
   "required": [],
   "properties": {
     "createdAt": {
-      "$ref": "createdAt"
+      "$ref": "fields/createdAt.json"
     },
     "description": {
       "type": "string",
       "description": "Product Description"
     },
     "gtin13": {
-      "$ref": "gtin13",
+      "$ref": "fields/gtin13.json",
       "title": "UPC Code"
     },
     "price": {
-      "$ref": "price"
+      "$ref": "fields/price.json"
     },
     "priceCurrency": {
-      "$ref": "priceCurrency"
+      "$ref": "fields/priceCurrency.json"
     },
     "sku": {
-      "$ref": "sku"
+      "$ref": "fields/sku.json"
     },
     "title": {
       "type": "string",
       "description": "Product Title"
     },
     "updatedAt": {
-      "$ref": "updatedAt"
+      "$ref": "fields/updatedAt.json"
     }
   }
 }
