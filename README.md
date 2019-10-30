@@ -12,6 +12,9 @@ Schemas for standardizing retail data models. Built using [JSON Schemas](https:/
 
 ## Tools
 
+* `util.js` - run `./util.js --help` for instructions on how to use
+  * `$ ./util.js generate:field <name>` - generate new field-level json schema
+
 ### Compile Schemas
 
 * `yarn compile` - compiles / validates schemas in the `schemas` directory
