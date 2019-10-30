@@ -5,5 +5,25 @@
   "description": "",
   "type": "object",
   "required": [],
-  "properties": {}
+  "properties": {
+    "accessCode": {
+      "type": "string",
+      "description": "Account password",
+      "title": "Password"
+    },
+    "createdAt": {
+      "$ref": "createdAt"
+    },
+    "email": {
+      "type": "string",
+      "description": "Account email"
+    },
+    "name": {
+      "type": "string",
+      "description": "Account name"
+    },
+    "updatedAt": {
+      "$ref": "updatedAt"
+    }
+  }
 }
