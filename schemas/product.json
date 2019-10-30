@@ -12,6 +12,10 @@
       "type": "string",
       "description": "Product Description"
     },
+    "gtin13": {
+      "$ref": "gtin13",
+      "title": "UPC Code"
+    },
     "price": {
       "$ref": "price"
     },

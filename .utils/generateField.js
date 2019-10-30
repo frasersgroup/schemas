@@ -2,6 +2,7 @@
 const chalk = require('chalk')
 const fs = require('fs')
 const path = require('path')
+const _ = require('lodash')
 
 exports.command = 'generate:field <name>'
 
@@ -32,13 +33,13 @@ exports.builder = {
 exports.handler = (argv) => {
   const defaultSchema = {
     $schema: 'http://json-schema.org/draft-07/schema#',
-    $id: `${argv.name.toLowerCase()}#`,
+    $id: `${_.camelCase(argv.name)}#`,
     description: argv.description || '',
     type: argv.type || '',
   }
 
   const fieldsDir = path.resolve(__dirname, '../schemas/fields')
-  const filePath = path.resolve(fieldsDir, `${argv.name.toLowerCase()}.json`)
+  const filePath = path.resolve(fieldsDir, `${_.camelCase(argv.name)}.json`)
 
   fs.writeFileSync(filePath, JSON.stringify(defaultSchema, null, 2))
 

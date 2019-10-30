@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "pricecurrency#",
+  "$id": "priceCurrency#",
   "description": "3 Digit ISO 4217 Currency Code",
   "type": "string",
   "pattern": "[A-Z]{3}"
