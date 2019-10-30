@@ -15,6 +15,7 @@ Schemas for standardizing retail data models. Built using [JSON Schemas](https:/
 * `util.js` - run `./util.js --help` for instructions on how to use
   * `$ ./util.js generate:field <name>` - generate new field-level json schema
   * `$ ./util.js generate:schema <name>` - generate new top-leel json schema
+  * `$ ./util.js compile <name> [-o <outfile>]` - dereference schema. Optionally write to a file
 
 ### Compile Schemas
 
