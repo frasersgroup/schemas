@@ -1,0 +1,9 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "account#",
+  "title": "Account",
+  "description": "",
+  "type": "object",
+  "required": [],
+  "properties": {}
+}

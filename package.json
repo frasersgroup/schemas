@@ -19,6 +19,7 @@
   "dependencies": {
     "ajv": "^6.10.2",
     "chalk": "^2.4.2",
+    "lodash": "^4.17.15",
     "yargs": "^14.2.0"
   },
   "devDependencies": {
