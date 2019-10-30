@@ -6,9 +6,15 @@
   "type": "object",
   "required": [],
   "properties": {
+    "createdAt": {
+      "$ref": "createdAt"
+    },
     "roleName": {
       "type": "string",
       "description": "Name of the role"
+    },
+    "updatedAt": {
+      "$ref": "updatedAt"
     }
   }
 }

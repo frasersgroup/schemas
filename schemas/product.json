@@ -12,6 +12,15 @@
       "type": "string",
       "description": "Product Description"
     },
+    "price": {
+      "$ref": "price"
+    },
+    "priceCurrency": {
+      "$ref": "priceCurrency"
+    },
+    "sku": {
+      "$ref": "sku"
+    },
     "title": {
       "type": "string",
       "description": "Product Title"
