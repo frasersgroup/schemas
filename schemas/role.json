@@ -5,5 +5,10 @@
   "description": "",
   "type": "object",
   "required": [],
-  "properties": {}
+  "properties": {
+    "roleName": {
+      "type": "string",
+      "description": "Name of the role"
+    }
+  }
 }
