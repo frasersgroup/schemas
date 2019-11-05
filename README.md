@@ -17,3 +17,5 @@ Schemas for standardizing retail data models. Built using [JSON Schemas](https:/
 * `yarn compile` - compiles / validates schemas in the `schemas` directory
 * `yarn compile:examples` - compiles / validates schemas in the `examples` directory
 
+# #Branch Structure
+Due to limited workload in this repo initially, all work should be done in develop. Submit PRs to master. We can switch to feature branches if we begin to see conflicts.
