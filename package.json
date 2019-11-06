@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "util": "./util.js",
     "validate": "ajv compile -s \"schemas/**/*.json\" -r \"schemas/**/*.json\"",
-    "validate:examples": "ajv compile -s \"examples/**/*.json\" -r \"examples/**/*.json\"",
+    "validate:examples": "ajv compile -s \"examples/**/*.json\" -r \"examples/**/*.json\""
   },
   "keywords": [],
   "author": "Chris Birk <cmbirk@gmail.com>",
