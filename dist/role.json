@@ -7,14 +7,20 @@
   "required": [],
   "properties": {
     "createdAt": {
-      "$ref": "fields/createdAt.json"
+      "$id": "createdAt",
+      "description": "Timestamp set on model creation",
+      "type": "string",
+      "format": "date-time"
     },
     "roleName": {
       "type": "string",
       "description": "Name of the role"
     },
     "updatedAt": {
-      "$ref": "fields/updatedAt.json"
+      "$id": "updatedAt",
+      "description": "Timestamp for last model update",
+      "type": "string",
+      "format": "date-time"
     }
   }
 }

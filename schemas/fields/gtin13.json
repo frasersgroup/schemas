@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "gtin13#",
+  "$id": "gtin13",
   "description": "13 digit UPC code of a product",
   "type": "string",
   "pattern": "[A-Za-z0-9]{13}"

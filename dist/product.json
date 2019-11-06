@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "product",
+  "title": "Product",
+  "type": "object",
+  "required": [],
+  "properties": {
+    "createdAt": {
+      "$id": "createdAt",
+      "description": "Timestamp set on model creation",
+      "type": "string",
+      "format": "date-time"
+    },
+    "description": {
+      "type": "string",
+      "description": "Product Description"
+    },
+    "gtin13": {
+      "title": "UPC Code",
+      "$id": "gtin13",
+      "description": "13 digit UPC code of a product",
+      "type": "string",
+      "pattern": "[A-Za-z0-9]{13}"
+    },
+    "price": {
+      "$id": "price",
+      "description": "Price value",
+      "type": "number"
+    },
+    "priceCurrency": {
+      "$id": "priceCurrency",
+      "description": "3 Digit ISO 4217 Currency Code",
+      "type": "string",
+      "pattern": "[A-Z]{3}"
+    },
+    "sku": {
+      "$id": "sku",
+      "description": "Merchant-specific identifier for a product",
+      "type": "string"
+    },
+    "title": {
+      "type": "string",
+      "description": "Product Title"
+    },
+    "updatedAt": {
+      "$id": "updatedAt",
+      "description": "Timestamp for last model update",
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

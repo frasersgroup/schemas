@@ -12,15 +12,15 @@ Schemas for standardizing retail data models. Built using [JSON Schemas](https:/
 
 ## Tools
 
-* `util.js` - run `./util.js --help` for instructions on how to use
-  * `$ ./util.js generate:field <name>` - generate new field-level json schema
-  * `$ ./util.js generate:schema <name>` - generate new top-leel json schema
-  * `$ ./util.js compile <name> [-o <outfile>]` - dereference schema. Optionally write to a file
+* `yarn util` - run `yarn util --help` for instructions on how to use
+  * `$ yarn util generate:field <name>` - generate new field-level json schema
+  * `$ yarn util generate:schema <name>` - generate new top-leel json schema
+  * `$ yarn util compile` - dereference / compile schemas to `/dist`
 
 ### Compile Schemas
 
-* `yarn compile` - compiles / validates schemas in the `schemas` directory
-* `yarn compile:examples` - compiles / validates schemas in the `examples` directory
+* `yarn validate` - validates schemas in the `schemas` directory
+* `yarn validate:examples` - validates schemas in the `examples` directory
 
 # #Branch Structure
 Due to limited workload in this repo initially, all work should be done in develop. Submit PRs to master. We can switch to feature branches if we begin to see conflicts.

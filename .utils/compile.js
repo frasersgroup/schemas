@@ -4,9 +4,9 @@ const fs = require('fs-extra')
 const path = require('path')
 const $RefParser = require('json-schema-ref-parser')
 
-exports.command = 'compile <name>'
+exports.command = 'compile'
 
-exports.describe = 'Dereference / compile a schema'
+exports.describe = 'Dereference / compile schemas'
 
 exports.builder = {
   name: {
@@ -14,23 +14,27 @@ exports.builder = {
   },
   outfile: {
     alias: 'o',
-    describe: 'Filename output for the compiled schema',
+    describe: 'Output schema to console',
+    type: 'boolean',
+  },
+  schema: {
+    describe: 'Compile individual schema',
+    type: 'string',
+  },
+  silent: {
+    alias: 's',
+    describe: 'Turn of console logging',
+    type: 'boolean',
   },
 }
 
-exports.handler = async (argv) => {
-  const schemasPath = path.resolve(__dirname, '../schemas')
+const schemasPath = path.resolve(__dirname, '../schemas')
+const distPath = path.resolve(__dirname, '../dist')
 
-  let schemas = await fs.readdir(schemasPath)
-  schemas = schemas
-    .filter((schema) => schema.match(/\.json$/))
-    .map((schema) => schema.replace(/\.json/, ''))
-
-  if (!schemas.includes(argv.name.toLowerCase())) {
-    throw new Error(`Schema model ${argv.name} does not exist`)
-  }
-
-  const schemaFilePath = path.resolve(schemasPath, `${argv.name}.json`)
+const compileSchema = async (name) => {
+  const filename = `${name}.json`
+  const schemaFilePath = path.resolve(schemasPath, filename)
+  const distFilePath = path.resolve(distPath, filename)
 
   const resultSchema = await $RefParser.dereference(schemaFilePath)
 
@@ -38,12 +42,21 @@ exports.handler = async (argv) => {
     delete resultSchema.properties[property].$schema
   })
 
-  if (argv.outfile) {
-    fs.writeFileSync(argv.outfile, JSON.stringify(resultSchema, null, 2))
-    console.log(`${chalk.green(argv.outfile)} written successfully`)
+  fs.writeFileSync(distFilePath, JSON.stringify(resultSchema, null, 2))
+  console.log(`${chalk.green(distFilePath)} written successfully`)
 
-    return true
-  }
+  return resultSchema
+}
+
+exports.handler = async (argv) => {
+  let schemas = await fs.readdir(schemasPath)
+  schemas = schemas
+    .filter((schema) => schema.match(/\.json$/))
+    .map((schema) => schema.replace(/\.json/, ''))
+
+  const compilePromises = schemas.map(compileSchema)
+
+  await Promise.all(compilePromises)
 
   return true
 }

@@ -12,7 +12,10 @@
       "title": "Password"
     },
     "createdAt": {
-      "$ref": "fields/createdAt.json"
+      "$id": "createdAt",
+      "description": "Timestamp set on model creation",
+      "type": "string",
+      "format": "date-time"
     },
     "email": {
       "type": "string",
@@ -23,7 +26,10 @@
       "description": "Account name"
     },
     "updatedAt": {
-      "$ref": "fields/updatedAt.json"
+      "$id": "updatedAt",
+      "description": "Timestamp for last model update",
+      "type": "string",
+      "format": "date-time"
     }
   }
 }
