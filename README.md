@@ -5,6 +5,9 @@
 
 Schemas for standardizing retail data models. Built using [JSON Schemas](https://json-schema.org)
 
+Implementation Details:
+* [Categories](Categories.md)
+
 ## Resources:
 * [Schema.org Product Schema](https://schema.org/Product)
 * [Google Product Structured Data](https://developers.google.com/search/docs/data-types/product)
