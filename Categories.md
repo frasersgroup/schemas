@@ -32,7 +32,7 @@ These categories are high-level and should easily be applicable to products. Mor
     * Dresses
     * Hoodies & Sweatshirts
     * Jeans
-    * Leggins
+    * Leggings
     * Lingerie, Sleep & Lounge
     * Jumpsuits, Rompers & Overalls
     * Pants
