@@ -11,6 +11,38 @@ These categories are high-level and should easily be applicable to products. Mor
 * Baby Products
 * Beauty
 * Clothing
+  * Men's
+    * Active
+    * Jackets & Coats
+    * Jeans
+    * Hoodies & Sweatshirts
+    * Pants
+    * Shirts
+    * Shorts
+    * Sleep & Lounge
+    * Socks
+    * Suits & Sport Coats
+    * Sweaters
+    * Swim
+    * T-Shirts & Tanks
+    * Underwear
+  * Women's
+    * Active
+    * Coats, Jackets & Vests
+    * Dresses
+    * Hoodies & Sweatshirts
+    * Jeans
+    * Leggins
+    * Lingerie, Sleep & Lounge
+    * Jumpsuits, Rompers & Overalls
+    * Pants
+    * Shorts
+    * Skirts
+    * Socks & Hosiery
+    * Suiting & Blazers
+    * Sweaters
+    * Swimsuits & Cover Ups
+    * Tops, Tees & Blouses
 * Computing
 * Consoles & Video Games
 * Consumer Electronics
